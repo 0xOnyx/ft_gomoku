@@ -7,11 +7,11 @@ from src.ui.render import plot_gomoku_board_interactive_with_player_info
 
 
 def main():
-	game_state = np.zeros((19, 19), dtype=int)
+    gomoku = Gomoku()
 
-	# Plot the interactive board with player move info
-	plot_gomoku_board_interactive_with_player_info(game_state)
- 
- 
+    # Plot the interactive board with player move info
+    plot_gomoku_board_interactive_with_player_info(gomoku.board)
+
+
 if __name__ == "__main__":
-	main()
+    main()
