@@ -43,14 +43,6 @@ def plot_gomoku_board_interactive_with_player_info(game_state):
 					fig.canvas.draw()
 					fig.canvas.mpl_disconnect(cid)  # Disconnect the click event
 
-	# Draw the initial board
-	for y in range(19):
-		for x in range(19):
-			if game_state[y, x] == 1:
-				ax.scatter(x, y, s=200, color='white', edgecolors='black', zorder=2)
-			elif game_state[y, x] == -1:
-				ax.scatter(x, y, s=200, color='black', zorder=2)
-
 	# Setting up the plot
 	ax.grid(which='both')
 	ax.set_xlim(0, 18)
