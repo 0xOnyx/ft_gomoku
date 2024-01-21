@@ -1,12 +1,17 @@
+import numpy as np
+
 from src.game.gomoku import Gomoku
 from src.game.playerTokens import PlayerToken
 
-
-def run():
-    game = Gomoku(19, 2, PlayerToken.BLACK)
-    x, y = game.get_next_move()
-    game.set_next_move({1, 1})
+from src.ui.render import plot_gomoku_board_interactive_with_player_info
 
 
+def main():
+	game_state = np.zeros((19, 19), dtype=int)
 
-run()
+	# Plot the interactive board with player move info
+	plot_gomoku_board_interactive_with_player_info(game_state)
+ 
+ 
+if __name__ == "__main__":
+	main()
