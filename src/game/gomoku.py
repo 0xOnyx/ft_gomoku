@@ -1,4 +1,3 @@
-from audioop import minmax
 
 import numpy as np
 
@@ -42,7 +41,7 @@ class Gomoku:
         return not is_winning(self.board, self.white_player_pebbles_taken, self.black_player_pebbles_taken, pos)
 
     def is_possible(self, pos: dict) -> bool:
-        return is_possible(pos, self.board, self.board_size)
+        return is_possible(self, pos)
 
     def evaluate(self):
         return 0
