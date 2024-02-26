@@ -1,4 +1,6 @@
 poetry.lock
-__pycache__/
-.idea/
 *.pyc
+__pycache__/
+
+# Ignore IDE specific files
+.idea/
