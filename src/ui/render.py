@@ -1,5 +1,8 @@
-import matplotlib.pyplot as plt
+import matplotlib
+# import tkinter
+# matplotlib.use('TkAgg')  # Use the TkAgg backend to prevent segmentation fault
 
+import matplotlib.pyplot as plt
 import numpy as np
 
 from src.game.move import is_winning
@@ -62,8 +65,6 @@ def plot_gomoku_board_interactive_with_player_info(game_state, black_captured=0,
 
 		fig.canvas.draw()
 
-	# Event handler for mouse clicks
-	# Event handler for mouse clicks
 	def onclick(event):
 		nonlocal black_captured, white_captured  # To modify these variables inside the function
 
