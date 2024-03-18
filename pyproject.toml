@@ -2,7 +2,7 @@
 name = "gomoku"
 version = "0.1.0"
 description = ""
-authors = ["jreivilo <j.reivilo@outlook.com>"]
+authors = ["jreivilo <j@outlook.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
