@@ -10,7 +10,7 @@ def main():
     gomoku = Gomoku()
 
     # Plot the interactive board with player move info
-    plot_gomoku_board_interactive_with_player_info(gomoku.board)
+    plot_gomoku_board_interactive_with_player_info(gomoku)
 
 
 if __name__ == "__main__":
