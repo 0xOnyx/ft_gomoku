@@ -1,7 +1,7 @@
 import numpy as np
 
 from src.game.gomoku import Gomoku
-from src.game.playerTokens import PlayerToken
+# from src.game.playerTokens import PlayerToken
 
 from src.ui.render import plot_gomoku_board_interactive_with_player_info
 
